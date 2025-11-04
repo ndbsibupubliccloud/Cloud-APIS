@@ -1,0 +1,1664 @@
+{
+	"info": {
+		"_postman_id": "19845821-ca3698f1-cf58-4de7-9e14-c4b548b36087",
+		"name": "Doms Final",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Delivery",
+			"id": "19845821-1205b1d1-7326-4dc1-a0d3-fb903838c5f2",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "ttpKmwuSUfq/fhXvrcZzENZksNMFCGwZK9ZJgNnP",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "API_SAP_COM_0106",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://my419475-api.s4hana.cloud.sap/sap/opu/odata/sap/API_OUTBOUND_DELIVERY_SRV;v=0002/A_OutbDeliveryHeader?$filter=(DeliveryDocument eq '0080000123')",
+					"protocol": "https",
+					"host": [
+						"my419475-api",
+						"s4hana",
+						"cloud",
+						"sap"
+					],
+					"path": [
+						"sap",
+						"opu",
+						"odata",
+						"sap",
+						"API_OUTBOUND_DELIVERY_SRV;v=0002",
+						"A_OutbDeliveryHeader"
+					],
+					"query": [
+						{
+							"key": "$filter",
+							"value": "(DeliveryDocument eq '0080000123')"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PurchaseRequisition",
+			"id": "19845821-efbe1446-cd12-46f9-a65e-c943e1942370",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "5jnkjZTtPtnRBpknQ]LbbnlUBdtcMKRLHxNYDtYw",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "API_SAP_COM_0102",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://my419475-api.s4hana.cloud.sap/sap/opu/odata4/sap/api_purchaserequisition_2/srvd_a2x/sap/purchaserequisition/0001/PurchaseReqnItem",
+					"protocol": "https",
+					"host": [
+						"my419475-api",
+						"s4hana",
+						"cloud",
+						"sap"
+					],
+					"path": [
+						"sap",
+						"opu",
+						"odata4",
+						"sap",
+						"api_purchaserequisition_2",
+						"srvd_a2x",
+						"sap",
+						"purchaserequisition",
+						"0001",
+						"PurchaseReqnItem"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PurchaseRequisitionItem",
+			"id": "19845821-fe8c86d2-c372-4267-9c50-cc667e6f3649",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "5jnkjZTtPtnRBpknQ]LbbnlUBdtcMKRLHxNYDtYw",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "API_SAP_COM_0102",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-csrf-token",
+						"value": "fetch",
+						"type": "text"
+					},
+					{
+						"key": "etag",
+						"value": "",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://my419475-api.s4hana.cloud.sap/sap/opu/odata4/sap/api_purchaserequisition_2/srvd_a2x/sap/purchaserequisition/0001/PurchaseReqnItem/10000043/10",
+					"protocol": "https",
+					"host": [
+						"my419475-api",
+						"s4hana",
+						"cloud",
+						"sap"
+					],
+					"path": [
+						"sap",
+						"opu",
+						"odata4",
+						"sap",
+						"api_purchaserequisition_2",
+						"srvd_a2x",
+						"sap",
+						"purchaserequisition",
+						"0001",
+						"PurchaseReqnItem",
+						"10000043",
+						"10"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PurchaseOrder",
+			"id": "19845821-d4c7183b-2c0b-4ac9-8464-69574ed485bc",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "username",
+							"value": "CPI_COM",
+							"type": "string"
+						},
+						{
+							"key": "password",
+							"value": "fupi8xlLsuRZRmYwBKtUqaorELcnYa<EvKncVidV",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-csrf-token",
+						"value": "fetch",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://my419475-api.s4hana.cloud.sap/sap/opu/odata4/sap/api_purchaseorder_2/srvd_a2x/sap/purchaseorder/0001/PurchaseOrder('4700000090')",
+					"protocol": "https",
+					"host": [
+						"my419475-api",
+						"s4hana",
+						"cloud",
+						"sap"
+					],
+					"path": [
+						"sap",
+						"opu",
+						"odata4",
+						"sap",
+						"api_purchaseorder_2",
+						"srvd_a2x",
+						"sap",
+						"purchaseorder",
+						"0001",
+						"PurchaseOrder('4700000090')"
+					]
+				}
+			},
+			"response": [
+				{
+					"id": "19845821-c903e479-8291-476a-860c-9ccb5ff1a001",
+					"name": "PurchaseOrder",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-csrf-token",
+								"value": "fetch",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://my419475-api.s4hana.cloud.sap/sap/opu/odata4/sap/api_purchaseorder_2/srvd_a2x/sap/purchaseorder/0001/PurchaseOrder('4700000085')",
+							"protocol": "https",
+							"host": [
+								"my419475-api",
+								"s4hana",
+								"cloud",
+								"sap"
+							],
+							"path": [
+								"sap",
+								"opu",
+								"odata4",
+								"sap",
+								"api_purchaseorder_2",
+								"srvd_a2x",
+								"sap",
+								"purchaseorder",
+								"0001",
+								"PurchaseOrder('4700000085')"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "Text",
+					"header": [
+						{
+							"key": "content-type",
+							"value": "application/json;odata.metadata=minimal;charset=utf-8"
+						},
+						{
+							"key": "content-length",
+							"value": "842"
+						},
+						{
+							"key": "sap-authenticated",
+							"value": "true"
+						},
+						{
+							"key": "x-csrf-token",
+							"value": "iDXnHMaok8xR4vtbH1zZ-A=="
+						},
+						{
+							"key": "odata-version",
+							"value": "4.0"
+						},
+						{
+							"key": "cache-control",
+							"value": "no-cache, no-store, must-revalidate"
+						},
+						{
+							"key": "sap-server",
+							"value": "true"
+						},
+						{
+							"key": "sap-perf-fesrec",
+							"value": "61732.000000"
+						},
+						{
+							"key": "content-encoding",
+							"value": "br"
+						},
+						{
+							"key": "x-content-type-options",
+							"value": "nosniff"
+						},
+						{
+							"key": "strict-transport-security",
+							"value": "max-age=31536000; includeSubDomains"
+						},
+						{
+							"key": "x-xss-protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "sap-passport-component",
+							"value": "none"
+						}
+					],
+					"cookie": [],
+					"responseTime": null,
+					"body": "{\n    \"@odata.context\": \"$metadata#PurchaseOrder/$entity\",\n    \"@odata.metadataEtag\": \"W/\\\"20251101174255\\\"\",\n    \"PurchaseOrder\": \"4700000085\",\n    \"PurchaseOrderType\": \"ZCON\",\n    \"PurchaseOrderSubtype\": \"\",\n    \"PurchasingDocumentOrigin\": \"9\",\n    \"PurchasingDocumentProcessCode\": \"\",\n    \"CreatedByUser\": \"CB9980000012\",\n    \"CreationDate\": \"2025-11-01\",\n    \"PurchaseOrderDate\": \"2025-11-01\",\n    \"LastChangeDateTime\": \"2025-11-01T06:19:49.520974Z\",\n    \"ValidityStartDate\": null,\n    \"ValidityEndDate\": null,\n    \"Language\": \"EN\",\n    \"PurchaseOrderDeletionCode\": \"\",\n    \"ReleaseIsNotCompleted\": false,\n    \"PurchasingCompletenessStatus\": false,\n    \"PurchasingProcessingStatus\": \"05\",\n    \"PurgReleaseSequenceStatus\": \"\",\n    \"ReleaseCode\": \"\",\n    \"PurchasingReleaseStrategy\": \"\",\n    \"PurgReasonForDocCancellation\": \"0\",\n    \"CompanyCode\": \"1000\",\n    \"PurchasingOrganization\": \"1000\",\n    \"PurchasingGroup\": \"P10\",\n    \"Supplier\": \"1300755\",\n    \"ManualSupplierAddressID\": \"\",\n    \"SupplierAddressID\": \"\",\n    \"SupplierRespSalesPersonName\": \"\",\n    \"SupplierPhoneNumber\": \"\",\n    \"SupplyingSupplier\": \"\",\n    \"SupplyingPlant\": \"\",\n    \"InvoicingParty\": \"\",\n    \"Customer\": \"\",\n    \"PurchaseContract\": \"\",\n    \"SupplierQuotationExternalID\": \"\",\n    \"QuotationSubmissionDate\": null,\n    \"ItemNumberIntervalForSubItems\": \"1\",\n    \"PaymentTerms\": \"Z001\",\n    \"CashDiscount1Days\": 30,\n    \"CashDiscount2Days\": 0,\n    \"NetPaymentDays\": 0,\n    \"CashDiscount1Percent\": 0,\n    \"CashDiscount2Percent\": 0,\n    \"DownPaymentType\": \"\",\n    \"DownPaymentPercentageOfTotAmt\": 0,\n    \"DownPaymentAmount\": 0,\n    \"DownPaymentDueDate\": null,\n    \"IncotermsClassification\": \"DAP\",\n    \"IncotermsTransferLocation\": \"Umbergaon\",\n    \"IncotermsVersion\": \"\",\n    \"IncotermsLocation1\": \"Umbergaon\",\n    \"IncotermsLocation2\": \"\",\n    \"IsIntrastatReportingRelevant\": false,\n    \"IsIntrastatReportingExcluded\": false,\n    \"CorrespncExternalReference\": \"\",\n    \"CorrespncInternalReference\": \"\",\n    \"PricingDocument\": \"1000001133\",\n    \"PricingProcedure\": \"ZRM000\",\n    \"DocumentCurrency\": \"INR\",\n    \"ExchangeRate\": 1,\n    \"ExchangeRateIsFixed\": false,\n    \"TaxReturnCountry\": \"IN\",\n    \"VATRegistrationCountry\": \"IN\",\n    \"PurgAggrgdProdCmplncSuplrSts\": \"\",\n    \"PurgAggrgdProdMarketabilitySts\": \"\",\n    \"PurgAggrgdSftyDataSheetStatus\": \"\",\n    \"PurgProdCmplncTotDngrsGoodsSts\": \"\",\n    \"PurchasingCollectiveNumber\": \"\",\n    \"SAP__Messages\": []\n}"
+				}
+			]
+		},
+		{
+			"name": "PurchaseOrder",
+			"id": "19845821-fbf64ddd-1f3d-4046-9afa-eb12f0e1014d",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "fupi8xlLsuRZRmYwBKtUqaorELcnYa<EvKncVidV",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "CPI_COM",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-csrf-token",
+						"value": "iDXnHMaok8xR4vtbH1zZ-A==",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"PurchaseOrder\": \"\",\r\n    \"CompanyCode\": \"1000\",\r\n    \"PurchaseOrderType\": \"ZCON\",\r\n    \"Supplier\": \"1300755\",\r\n    \"PaymentTerms\": \"Z001\",\r\n    \"PurchasingOrganization\": \"1000\",\r\n    \"PurchasingGroup\": \"P10\",\r\n    \"PurchaseOrderDate\": \"2025-11-01\",\r\n    \"DocumentCurrency\": \"INR\",\r\n    \"_PurchaseOrderItem\": [\r\n        {\r\n            \"PurchaseOrder\": \" \",\r\n            \"PurchaseOrderItem\": \"00010\",\r\n            \"PurchaseOrderCategory\":\"F\",\r\n         //   \"AccountAssignmentCategory\": \"K\",\r\n            \"Plant\": \"1100\",\r\n            \"StorageLocation\": \"\",\r\n            \"OrderQuantity\": 10,\r\n            \"PurchaseOrderQuantityUnit\": \"D\",\r\n            \"NetPriceAmount\": 1000,\r\n            \"DocumentCurrency\": \"INR\",\r\n            \"Material\": \"000000000000000029\",\r\n           // \"PurchaseOrderItemText\": \"Test PO\",\r\n            \"MaterialGroup\": \"0004\",\r\n            \"TaxCode\": \"P1\"\r\n        }\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://my419475-api.s4hana.cloud.sap/sap/opu/odata4/sap/api_purchaseorder_2/srvd_a2x/sap/purchaseorder/0001/PurchaseOrder",
+					"protocol": "https",
+					"host": [
+						"my419475-api",
+						"s4hana",
+						"cloud",
+						"sap"
+					],
+					"path": [
+						"sap",
+						"opu",
+						"odata4",
+						"sap",
+						"api_purchaseorder_2",
+						"srvd_a2x",
+						"sap",
+						"purchaseorder",
+						"0001",
+						"PurchaseOrder"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PurchaseOrder Update",
+			"id": "19845821-15aabd26-82cf-4108-b65e-dbe3b53183a9",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "fupi8xlLsuRZRmYwBKtUqaorELcnYa<EvKncVidV",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "CPI_COM",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "x-csrf-token",
+						"value": "iDXnHMaok8xR4vtbH1zZ-A==",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    // \"PurchaseOrder\": \"\",\r\n    // \"CompanyCode\": \"1000\",\r\n    // \"PurchaseOrderType\": \"ZCON\",\r\n    // \"Supplier\": \"0001100810\",\r\n    // \"PaymentTerms\": \"Z001\",\r\n    // \"PurchasingOrganization\": \"1000\",\r\n    // \"PurchasingGroup\": \"P10\",\r\n    // \"PurchaseOrderDate\": \"2025-11-01\",\r\n    \"DocumentCurrency\": \"INR\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://my419475-api.s4hana.cloud.sap/sap/opu/odata4/sap/api_purchaseorder_2/srvd_a2x/sap/purchaseorder/0001/PurchaseOrder('4700000090')",
+					"protocol": "https",
+					"host": [
+						"my419475-api",
+						"s4hana",
+						"cloud",
+						"sap"
+					],
+					"path": [
+						"sap",
+						"opu",
+						"odata4",
+						"sap",
+						"api_purchaseorder_2",
+						"srvd_a2x",
+						"sap",
+						"purchaseorder",
+						"0001",
+						"PurchaseOrder('4700000090')"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PAYMINT2",
+			"id": "19845821-3b1b4e01-75e1-4020-9d61-43d61c8568f2",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "fupi8xlLsuRZRmYwBKtUqaorELcnYa<EvKncVidV",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "CPI_COM",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-csrf-token",
+						"value": "R1Cb9RxIh4x62VyQf2uhLg==",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Paymentdate\": \"2025-09-10T00:00:00\",\r\n    \"Paymentrunid\": \"A34699\",\r\n    \"Process\": \"\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://my419475-api.s4hana.cloud.sap/sap/opu/odata/sap/ZUI_PAYMENT_W2/ZC_PAYMENT_TBL",
+					"protocol": "https",
+					"host": [
+						"my419475-api",
+						"s4hana",
+						"cloud",
+						"sap"
+					],
+					"path": [
+						"sap",
+						"opu",
+						"odata",
+						"sap",
+						"ZUI_PAYMENT_W2",
+						"ZC_PAYMENT_TBL"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "cndnform",
+			"id": "19845821-7da72729-987b-49cd-86fb-735a023cc0e8",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "fupi8xlLsuRZRmYwBKtUqaorELcnYa<EvKncVidV",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "CPI_COM",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://my419475.s4hana.cloud.sap:443/sap/opu/odata/sap/ZUI_C_JOURNAL_CUSTOMADS_O2/ZCustom_Vendor_ADS(Accounting_Document='1900000235',Company_Code='1000',fiscal_Year='2025')",
+					"protocol": "https",
+					"host": [
+						"my419475",
+						"s4hana",
+						"cloud",
+						"sap"
+					],
+					"port": "443",
+					"path": [
+						"sap",
+						"opu",
+						"odata",
+						"sap",
+						"ZUI_C_JOURNAL_CUSTOMADS_O2",
+						"ZCustom_Vendor_ADS(Accounting_Document='1900000235',Company_Code='1000',fiscal_Year='2025')"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SupplierInvoice",
+			"id": "19845821-91250297-709a-4fe7-b597-2c8f6e3afcf7",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "fupi8xlLsuRZRmYwBKtUqaorELcnYa<EvKncVidV",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "CPI_COM",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-csrf-token",
+						"value": "fetch",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://my419475-api.s4hana.cloud.sap/sap/opu/odata/sap/API_SUPPLIERINVOICE_PROCESS_SRV/A_SupplierInvoice(SupplierInvoice='5105600104',FiscalYear='2024')/to_SelectedPurchaseOrders",
+					"protocol": "https",
+					"host": [
+						"my419475-api",
+						"s4hana",
+						"cloud",
+						"sap"
+					],
+					"path": [
+						"sap",
+						"opu",
+						"odata",
+						"sap",
+						"API_SUPPLIERINVOICE_PROCESS_SRV",
+						"A_SupplierInvoice(SupplierInvoice='5105600104',FiscalYear='2024')",
+						"to_SelectedPurchaseOrders"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SupplierInvoice",
+			"id": "19845821-44bb53e2-7172-419d-b85e-1a9a6c038f9d",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "fupi8xlLsuRZRmYwBKtUqaorELcnYa<EvKncVidV",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "CPI_COM",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-csrf-token",
+						"value": "cPt3r5qqnwYimwU01jbIIQ==",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"CompanyCode\": \"1000\",\r\n    \"DocumentDate\": \"2025-03-11T00:00:00\",\r\n    \"PostingDate\": \"2025-03-11T00:00:00\",\r\n    \"DocumentCurrency\": \"INR\",\r\n    \"PaymentTerms\": \"0001\",\r\n    \"TaxDeterminationDate\": \"2025-03-11T00:00:00\",\r\n    \"SupplierInvoiceStatus\": \"A\",\r\n    \"to_SuplrInvcItemPurOrdRef\": {\r\n        \"results\": [\r\n            {\r\n                \"SupplierInvoiceItem\": \"01\",\r\n                \"PurchaseOrder\": \"4500000091\",\r\n                \"PurchaseOrderItem\": \"10\",\r\n                \"TaxCode\": \"P1\",\r\n                \"SupplierInvoiceItemAmount\": \" \",\r\n                \"DocumentCurrency\": \"INR\",\r\n                \"ReferenceDocument\": \"5000000101\",\r\n                \"ReferenceDocumentFiscalYear\": \"2025\",\r\n                \"ReferenceDocumentItem\": \"1\",\r\n                \"QuantityInPurchaseOrderUnit\": \"5\",\r\n                \"PurchaseOrderQuantityUnit\": \"PC\"\r\n            }\r\n        ]\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://my419475-api.s4hana.cloud.sap/sap/opu/odata/sap/API_SUPPLIERINVOICE_PROCESS_SRV/A_SupplierInvoice(SupplierInvoice='5105600104',FiscalYear='2024')/to_SelectedPurchaseOrders",
+					"protocol": "https",
+					"host": [
+						"my419475-api",
+						"s4hana",
+						"cloud",
+						"sap"
+					],
+					"path": [
+						"sap",
+						"opu",
+						"odata",
+						"sap",
+						"API_SUPPLIERINVOICE_PROCESS_SRV",
+						"A_SupplierInvoice(SupplierInvoice='5105600104',FiscalYear='2024')",
+						"to_SelectedPurchaseOrders"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Payment hdr details",
+			"id": "19845821-ed7dbf22-a97a-45d2-a59c-ec61097a3ab5",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "fupi8xlLsuRZRmYwBKtUqaorELcnYa<EvKncVidV",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "CPI_COM",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "text/xml",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://my419475.s4hana.cloud.sap/sap/opu/odata/sap/ZWEB_C_PAYMENT_HDR_DETAILS/ZC_Payment_Proposal_Hdr(PaymentDocument='2000000249',PayingCompanyCode='1000',FiscalYear='2025')",
+					"protocol": "https",
+					"host": [
+						"my419475",
+						"s4hana",
+						"cloud",
+						"sap"
+					],
+					"path": [
+						"sap",
+						"opu",
+						"odata",
+						"sap",
+						"ZWEB_C_PAYMENT_HDR_DETAILS",
+						"ZC_Payment_Proposal_Hdr(PaymentDocument='2000000249',PayingCompanyCode='1000',FiscalYear='2025')"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Purchase Vendor details",
+			"id": "19845821-cd4ebef0-50c7-4620-8045-2f52d43e3b64",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "fupi8xlLsuRZRmYwBKtUqaorELcnYa<EvKncVidV",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "CPI_COM",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "text/xml; charset=utf-8",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "<soapenv:Envelope xmlns:soapenv=\"http://schemas.xmlsoap.org/soap/envelope/\"\r\n                  xmlns:glob=\"http://sap.com/xi/SAPSCORE/Global\">\r\n   <soapenv:Header/>\r\n   <soapenv:Body>\r\n      <glob:JournalEntryBulkChangeRequest>\r\n         <JournalEntryChangeRequest>\r\n            <!-- Your payload goes here -->\r\n         </JournalEntryChangeRequest>\r\n      </glob:JournalEntryBulkChangeRequest>\r\n   </soapenv:Body>\r\n</soapenv:Envelope>\r\n"
+				},
+				"url": {
+					"raw": "https://my419475-api.s4hana.cloud.sap/sap/opu/odata/sap/ZUI_I_PURCHASE_DETAILS/ZI_PURCHASE_ORDER_DETAILS?$filter=PurchaseOrder eq '4700000070' & PurchaseOrderItem eq '10'",
+					"protocol": "https",
+					"host": [
+						"my419475-api",
+						"s4hana",
+						"cloud",
+						"sap"
+					],
+					"path": [
+						"sap",
+						"opu",
+						"odata",
+						"sap",
+						"ZUI_I_PURCHASE_DETAILS",
+						"ZI_PURCHASE_ORDER_DETAILS"
+					],
+					"query": [
+						{
+							"key": "$filter",
+							"value": "PurchaseOrder eq '4700000070' "
+						},
+						{
+							"key": " PurchaseOrderItem eq '10'",
+							"value": null
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PaymentAdvice",
+			"id": "19845821-d652c61e-85f9-44c4-96cc-09099e339d45",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PurchaseOrderItem",
+			"id": "19845821-eca06d88-90cd-4c71-8901-596fd30ee725",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "fupi8xlLsuRZRmYwBKtUqaorELcnYa<EvKncVidV",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "CPI_COM",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "x-csrf-token",
+						"value": "YvfMTmgIq-V1zxXHf5LK_A==",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"IsCompletelyDelivered\": true,\r\n    \"GoodsReceiptLatestCreationDate\" :  \"2017-04-13\"\r\n    \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://my419475-api.s4hana.cloud.sap/sap/opu/odata4/sap/api_purchaseorder_2/srvd_a2x/sap/purchaseorder/0001/PurchaseOrderItem/4700000068/10",
+					"protocol": "https",
+					"host": [
+						"my419475-api",
+						"s4hana",
+						"cloud",
+						"sap"
+					],
+					"path": [
+						"sap",
+						"opu",
+						"odata4",
+						"sap",
+						"api_purchaseorder_2",
+						"srvd_a2x",
+						"sap",
+						"purchaseorder",
+						"0001",
+						"PurchaseOrderItem",
+						"4700000068",
+						"10"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "BusinessPartner",
+			"id": "19845821-e02815e2-9bef-4a94-aacd-f37f936acbb7",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "nLRxBZfvyNVPdaow$wsbaljNJHLpXyCMdiNvBkM2",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "API_SAP_COM_0008",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://my419475-api.s4hana.cloud.sap/sap/opu/odata/sap/API_BUSINESS_PARTNER/A_BusinessPartner('9980000000')",
+					"protocol": "https",
+					"host": [
+						"my419475-api",
+						"s4hana",
+						"cloud",
+						"sap"
+					],
+					"path": [
+						"sap",
+						"opu",
+						"odata",
+						"sap",
+						"API_BUSINESS_PARTNER",
+						"A_BusinessPartner('9980000000')"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "OutboundDelivery Copy",
+			"id": "19845821-54590dd2-2326-41bd-890d-40d963c96640",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "ttpKmwuSUfq/fhXvrcZzENZksNMFCGwZK9ZJgNnP",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "API_SAP_COM_0106",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-csrf-token",
+						"value": "fetch",
+						"type": "text"
+					},
+					{
+						"key": "etag",
+						"value": "",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://my419475-api.s4hana.cloud.sap/sap/opu/odata/sap/API_OUTBOUND_DELIVERY_SRV;v=0002/A_OutbDeliveryHeader('0080000123')",
+					"protocol": "https",
+					"host": [
+						"my419475-api",
+						"s4hana",
+						"cloud",
+						"sap"
+					],
+					"path": [
+						"sap",
+						"opu",
+						"odata",
+						"sap",
+						"API_OUTBOUND_DELIVERY_SRV;v=0002",
+						"A_OutbDeliveryHeader('0080000123')"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "OutboundDeliveryUpdate",
+			"id": "19845821-dec2ab1a-53aa-4661-a3f6-11e9cc327484",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "ttpKmwuSUfq/fhXvrcZzENZksNMFCGwZK9ZJgNnP",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "API_SAP_COM_0106",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "x-csrf-token",
+						"value": "5njkgkzaJOjDz-2tSbFpUQ==",
+						"type": "text"
+					},
+					{
+						"key": "If-Match",
+						"value": "W/\"'0004'\"",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"ActualDeliveryQuantity\" : \"2\"\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://my419475-api.s4hana.cloud.sap/sap/opu/odata/sap/API_OUTBOUND_DELIVERY_SRV;v=0002/A_OutbDeliveryItem(DeliveryDocument='0080000123',DeliveryDocumentItem='000010')",
+					"protocol": "https",
+					"host": [
+						"my419475-api",
+						"s4hana",
+						"cloud",
+						"sap"
+					],
+					"path": [
+						"sap",
+						"opu",
+						"odata",
+						"sap",
+						"API_OUTBOUND_DELIVERY_SRV;v=0002",
+						"A_OutbDeliveryItem(DeliveryDocument='0080000123',DeliveryDocumentItem='000010')"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "BillingDocumentPDF",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"var template = `\r",
+							"<style type=\"text/css\">\r",
+							"    .tftable {font-size:14px;color:#333333;width:100%;border-width: 1px;border-color: #87ceeb;border-collapse: collapse;}\r",
+							"    .tftable th {font-size:18px;background-color:#87ceeb;border-width: 1px;padding: 8px;border-style: solid;border-color: #87ceeb;text-align:left;}\r",
+							"    .tftable tr {background-color:#ffffff;}\r",
+							"    .tftable td {font-size:14px;border-width: 1px;padding: 8px;border-style: solid;border-color: #87ceeb;}\r",
+							"    .tftable tr:hover {background-color:#e0ffff;}\r",
+							"</style>\r",
+							"\r",
+							"<table class=\"tftable\" border=\"1\">\r",
+							"    <tr>\r",
+							"        <th>Billing Document</th>\r",
+							"        <th>Creation Date</th>\r",
+							"        <th>Net Amount</th>\r",
+							"        <th>Total Tax Amount</th>\r",
+							"        <th>Gross Amount</th>\r",
+							"    </tr>\r",
+							"    \r",
+							"    <tr>\r",
+							"        <td>{{response.BillingDocument}}</td>\r",
+							"        <td>{{response.CreationDate}}</td>\r",
+							"        <td>{{response.TotalNetAmount}}</td>\r",
+							"        <td>{{response.TotalTaxAmount}}</td>\r",
+							"        <td>{{response.TotalGrossAmount}}</td>\r",
+							"    </tr>\r",
+							"</table>\r",
+							"`;\r",
+							"\r",
+							"function constructVisualizerPayload() {\r",
+							"    return {response: pm.response.json()}\r",
+							"}\r",
+							"\r",
+							"pm.visualizer.set(template, constructVisualizerPayload());"
+						],
+						"type": "text/javascript",
+						"packages": {},
+						"id": "73275fca-5db7-4433-891c-b765fd5fe3f1"
+					}
+				}
+			],
+			"id": "19845821-1381aa42-7d9f-41ec-bc6c-b68d7193fad5",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "fupi8xlLsuRZRmYwBKtUqaorELcnYa<EvKncVidV",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "CPI_COM",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-csrf-token",
+						"value": "fetch",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://my419475-api.s4hana.cloud.sap/sap/opu/odata4/sap/api_billingdocument/srvd_a2x/sap/billingdocument/0001/BillingDocument('090000192')?$expand=_Item",
+					"protocol": "https",
+					"host": [
+						"my419475-api",
+						"s4hana",
+						"cloud",
+						"sap"
+					],
+					"path": [
+						"sap",
+						"opu",
+						"odata4",
+						"sap",
+						"api_billingdocument",
+						"srvd_a2x",
+						"sap",
+						"billingdocument",
+						"0001",
+						"BillingDocument('090000192')"
+					],
+					"query": [
+						{
+							"key": "$expand",
+							"value": "_Item"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"id": "19845821-7821f7c7-0c5b-4d79-92f4-9f245d9575e1",
+					"name": "BillingDocument",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-csrf-token",
+								"value": "fetch",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://my419475-api.s4hana.cloud.sap/sap/opu/odata4/sap/api_billingdocument/srvd_a2x/sap/billingdocument/0001/BillingDocument('090000192')?$expand=_Item",
+							"protocol": "https",
+							"host": [
+								"my419475-api",
+								"s4hana",
+								"cloud",
+								"sap"
+							],
+							"path": [
+								"sap",
+								"opu",
+								"odata4",
+								"sap",
+								"api_billingdocument",
+								"srvd_a2x",
+								"sap",
+								"billingdocument",
+								"0001",
+								"BillingDocument('090000192')"
+							],
+							"query": [
+								{
+									"key": "$expand",
+									"value": "_Item"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "content-type",
+							"value": "application/json;odata.metadata=minimal;charset=utf-8"
+						},
+						{
+							"key": "content-length",
+							"value": "1891"
+						},
+						{
+							"key": "x-csrf-token",
+							"value": "VRky1wUaLAQu2_KeVPLXGA=="
+						},
+						{
+							"key": "odata-version",
+							"value": "4.0"
+						},
+						{
+							"key": "etag",
+							"value": "W/\"SADL-202504070536548291960C~20250407053654.8291960\""
+						},
+						{
+							"key": "cache-control",
+							"value": "no-cache, no-store, must-revalidate"
+						},
+						{
+							"key": "sap-server",
+							"value": "true"
+						},
+						{
+							"key": "sap-perf-fesrec",
+							"value": "100687.000000"
+						},
+						{
+							"key": "content-encoding",
+							"value": "br"
+						},
+						{
+							"key": "x-content-type-options",
+							"value": "nosniff"
+						},
+						{
+							"key": "strict-transport-security",
+							"value": "max-age=31536000; includeSubDomains"
+						},
+						{
+							"key": "x-xss-protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "sap-passport-component",
+							"value": "none"
+						}
+					],
+					"cookie": [],
+					"responseTime": null,
+					"body": "{\n    \"@odata.context\": \"$metadata#BillingDocument(_Item())/$entity\",\n    \"@odata.metadataEtag\": \"W/\\\"20250402085439\\\"\",\n    \"@odata.etag\": \"W/\\\"SADL-202504070536548291960C~20250407053654.8291960\\\"\",\n    \"BillingDocument\": \"90000192\",\n    \"SDDocumentCategory\": \"M\",\n    \"BillingDocumentCategory\": \"L\",\n    \"BillingDocumentType\": \"F2\",\n    \"CreatedByUser\": \"CB9980000027\",\n    \"CreationDate\": \"2025-04-07\",\n    \"CreationTime\": \"05:36:51\",\n    \"LastChangeDate\": null,\n    \"LastChangeDateTime\": \"2025-04-07T05:36:54.829196Z\",\n    \"LogicalSystem\": \"0M6CVUH\",\n    \"SalesOrganization\": \"1000\",\n    \"DistributionChannel\": \"00\",\n    \"Division\": \"00\",\n    \"BillingDocumentDate\": \"2025-04-07\",\n    \"BillingDocumentIsCancelled\": false,\n    \"CancelledBillingDocument\": \"\",\n    \"BillingDocCombinationCriteria\": \"\",\n    \"IsIntrastatReportingRelevant\": false,\n    \"IsIntrastatReportingExcluded\": false,\n    \"TotalNetAmount\": 4500,\n    \"TransactionCurrency\": \"INR\",\n    \"StatisticsCurrency\": \"INR\",\n    \"TotalTaxAmount\": 1260,\n    \"TotalGrossAmount\": 5760,\n    \"CustomerPriceGroup\": \"\",\n    \"PriceListType\": \"\",\n    \"TaxDepartureCountry\": \"IN\",\n    \"VATRegistration\": \"\",\n    \"VATRegistrationOrigin\": \"A\",\n    \"VATRegistrationCountry\": \"IN\",\n    \"CustomerTaxClassification1\": \"0\",\n    \"CustomerTaxClassification2\": \"0\",\n    \"CustomerTaxClassification3\": \"0\",\n    \"CustomerTaxClassification4\": \"1\",\n    \"CustomerTaxClassification5\": \"1\",\n    \"CustomerTaxClassification6\": \"1\",\n    \"CustomerTaxClassification7\": \"\",\n    \"CustomerTaxClassification8\": \"\",\n    \"CustomerTaxClassification9\": \"\",\n    \"IsEUTriangularDeal\": false,\n    \"SDPricingProcedure\": \"ZADOM\",\n    \"ShippingCondition\": \"01\",\n    \"IncotermsVersion\": \"\",\n    \"IncotermsClassification\": \"CIF\",\n    \"IncotermsTransferLocation\": \"CIF\",\n    \"IncotermsLocation1\": \"CIF\",\n    \"IncotermsLocation2\": \"\",\n    \"PayerParty\": \"100011\",\n    \"ContractAccount\": \"\",\n    \"CustomerPaymentTerms\": \"0001\",\n    \"PaymentMethod\": \"\",\n    \"PaymentReference\": \"0090000192\",\n    \"FixedValueDate\": null,\n    \"AdditionalValueDays\": \"0\",\n    \"SEPAMandate\": \"\",\n    \"CompanyCode\": \"1000\",\n    \"FiscalYear\": \"0000\",\n    \"AccountingDocument\": \"\",\n    \"CustomerAccountAssignmentGroup\": \"Z1\",\n    \"AccountingExchangeRateIsSet\": false,\n    \"AbsltAccountingExchangeRate\": 1,\n    \"AcctgExchangeRateIsIndrctQtan\": false,\n    \"ExchangeRateDate\": \"2025-04-07\",\n    \"ExchangeRateType\": \"\",\n    \"DocumentReferenceID\": \"F27125000002\",\n    \"AssignmentReference\": \"0090000192\",\n    \"ReversalReason\": \"\",\n    \"DunningArea\": \"\",\n    \"DunningBlockingReason\": \"\",\n    \"DunningKey\": \"\",\n    \"IsRelevantForAccrual\": false,\n    \"SoldToParty\": \"100011\",\n    \"PartnerCompany\": \"\",\n    \"PurchaseOrderByCustomer\": \"dis test\",\n    \"CustomerGroup\": \"\",\n    \"Country\": \"IN\",\n    \"CityCode\": \"\",\n    \"SalesDistrict\": \"\",\n    \"Region\": \"MH\",\n    \"County\": \"\",\n    \"CreditControlArea\": \"1000\",\n    \"PricingDocument\": \"0000000364\",\n    \"OverallSDProcessStatus\": \"A\",\n    \"OverallBillingStatus\": \"B\",\n    \"AccountingPostingStatus\": \"A\",\n    \"AccountingTransferStatus\": \"A\",\n    \"BillingIssueType\": \"\",\n    \"InvoiceListStatus\": \"\",\n    \"OvrlItmGeneralIncompletionSts\": \"\",\n    \"OverallPricingIncompletionSts\": \"\",\n    \"InvoiceListType\": \"LR\",\n    \"InvoiceListBillingDate\": null,\n    \"SAP__Messages\": [],\n    \"_Item\": [\n        {\n            \"@odata.etag\": \"W/\\\"SADL-202504070536548291960C~20250407053654.8291960\\\"\",\n            \"BillingDocument\": \"90000192\",\n            \"BillingDocumentItem\": \"10\",\n            \"SalesDocumentItemCategory\": \"TAN\",\n            \"SalesDocumentItemType\": \"\",\n            \"ReturnItemProcessingType\": \"\",\n            \"CreatedByUser\": \"CB9980000027\",\n            \"CreationDate\": \"2025-04-07\",\n            \"CreationTime\": \"05:36:51\",\n            \"ReferenceLogicalSystem\": \"\",\n            \"OrganizationDivision\": \"00\",\n            \"Division\": \"00\",\n            \"SalesOffice\": \"\",\n            \"Product\": \"43\",\n            \"OriginallyRequestedMaterial\": \"43\",\n            \"InternationalArticleNumber\": \"\",\n            \"PricingReferenceMaterial\": \"\",\n            \"Batch\": \"\",\n            \"ProductGroup\": \"FAA\",\n            \"AdditionalMaterialGroup1\": \"\",\n            \"AdditionalMaterialGroup2\": \"\",\n            \"AdditionalMaterialGroup3\": \"\",\n            \"AdditionalMaterialGroup4\": \"\",\n            \"AdditionalMaterialGroup5\": \"\",\n            \"ProductConfiguration\": \"0\",\n            \"Plant\": \"1100\",\n            \"StorageLocation\": \"1153\",\n            \"PlantRegion\": \"GJ\",\n            \"PlantCounty\": \"\",\n            \"PlantCity\": \"\",\n            \"MaterialDeterminationType\": \"\",\n            \"SoldProduct\": \"\",\n            \"BillingDocumentItemText\": \"DOMS Z1 PENCIL EXP\",\n            \"ServicesRenderedDate\": \"2025-04-07\",\n            \"BillingQuantity\": 5,\n            \"BillingQuantityUnitSAPCode\": \"ST\",\n            \"BillingQuantityUnitISOCode\": \"PCE\",\n            \"BillingQuantityInBaseUnit\": 5,\n            \"BaseUnitSAPCode\": \"ST\",\n            \"BaseUnitISOCode\": \"PCE\",\n            \"MRPRequiredQuantityInBaseUnit\": 5,\n            \"BillingToBaseQuantityDnmntr\": 1,\n            \"BillingToBaseQuantityNmrtr\": 1,\n            \"ItemGrossWeight\": 10,\n            \"ItemNetWeight\": 9,\n            \"ItemWeightUnitSAPCode\": \"KG\",\n            \"ItemWeightUnitISOCode\": \"KGM\",\n            \"ItemVolume\": 0,\n            \"ItemVolumeUnitSAPCode\": \"\",\n            \"ItemVolumeUnitISOCode\": \"\",\n            \"BillingPlanRule\": \"\",\n            \"BillingPlan\": \"\",\n            \"BillingPlanItem\": \"0\",\n            \"NetAmount\": 4500,\n            \"TransactionCurrency\": \"INR\",\n            \"GrossAmount\": 0,\n            \"PricingDate\": \"2025-04-07\",\n            \"AbsltPriceDetnExchangeRate\": 1,\n            \"PriceDetnExchRateIsIndrctQtan\": false,\n            \"PriceDetnExchangeRateDate\": \"2025-04-07\",\n            \"PricingScaleQuantityInBaseUnit\": 0,\n            \"TaxAmount\": 1260,\n            \"CostAmount\": 10,\n            \"Subtotal1Amount\": 5760,\n            \"Subtotal2Amount\": 0,\n            \"Subtotal3Amount\": 0,\n            \"Subtotal4Amount\": 0,\n            \"Subtotal5Amount\": 0,\n            \"Subtotal6Amount\": 0,\n            \"StatisticalValueControl\": \"\",\n            \"CashDiscountIsDeductible\": true,\n            \"CustomerConditionGroup1\": \"\",\n            \"CustomerConditionGroup2\": \"\",\n            \"CustomerConditionGroup3\": \"\",\n            \"CustomerConditionGroup4\": \"\",\n            \"CustomerConditionGroup5\": \"\",\n            \"ManualPriceChangeType\": \"A\",\n            \"MaterialPricingGroup\": \"\",\n            \"AbsltStatisticsExchangeRate\": 1,\n            \"StatisticsExchRateIsIndrctQtan\": false,\n            \"MainItemPricingRefMaterial\": \"\",\n            \"MainItemMaterialPricingGroup\": \"\",\n            \"TimeSheetOvertimeCategory\": \"\",\n            \"DepartureCountry\": \"IN\",\n            \"TaxJurisdiction\": \"\",\n            \"ProductTaxClassification1\": \"0\",\n            \"ProductTaxClassification2\": \"0\",\n            \"ProductTaxClassification3\": \"0\",\n            \"ProductTaxClassification4\": \"0\",\n            \"ProductTaxClassification5\": \"0\",\n            \"ProductTaxClassification6\": \"0\",\n            \"ProductTaxClassification7\": \"\",\n            \"ProductTaxClassification8\": \"\",\n            \"ProductTaxClassification9\": \"\",\n            \"TaxCode\": \"O2\",\n            \"TaxRateValidityStartDate\": \"2024-04-01\",\n            \"EligibleAmountForCashDiscount\": 0,\n            \"BusinessArea\": \"\",\n            \"ProfitCenter\": \"1100\",\n            \"WBSElementExternalID\": \"\",\n            \"ProviderContract\": \"\",\n            \"ProviderContractItem\": \"0\",\n            \"BillingPeriodOfPerfStartDate\": null,\n            \"BillingPeriodOfPerfEndDate\": null,\n            \"ControllingArea\": \"A000\",\n            \"CostCenter\": \"\",\n            \"MatlAccountAssignmentGroup\": \"03\",\n            \"ReferenceSDDocument\": \"80000150\",\n            \"ReferenceSDDocumentItem\": \"10\",\n            \"ReferenceSDDocumentCategory\": \"J\",\n            \"SalesDocument\": \"162\",\n            \"SalesDocumentItem\": \"10\",\n            \"SalesSDDocumentCategory\": \"C\",\n            \"HigherLevelItem\": null,\n            \"BillingDocumentItemInPartSgmt\": \"10\",\n            \"SalesGroup\": \"\",\n            \"AdditionalCustomerGroup1\": \"\",\n            \"AdditionalCustomerGroup2\": \"\",\n            \"AdditionalCustomerGroup3\": \"\",\n            \"AdditionalCustomerGroup4\": \"\",\n            \"AdditionalCustomerGroup5\": \"\",\n            \"SDDocumentReason\": \"\",\n            \"ItemIsRelevantForCredit\": true,\n            \"CreditRelatedPrice\": 0,\n            \"ShippingPoint\": \"1100\",\n            \"ServiceDocumentType\": \"\",\n            \"ServiceDocument\": \"\",\n            \"ServiceDocumentItem\": \"0\",\n            \"BusinessSolutionOrder\": \"\",\n            \"BusinessSolutionOrderItem\": \"0\",\n            \"HigherLevelItemUsage\": \"\",\n            \"SAP__Messages\": []\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "Business Partner WithholdingTax",
+			"id": "19845821-139f7da8-beb7-4c7f-8da7-173b24c8fb4f",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Business Partner Withholding Tax",
+			"id": "19845821-2b58f330-26df-43ef-a966-783358c65c52",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-csrf-token",
+						"value": "Zy1n1fD6w8DsYY9TTXqZ-w==",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"Supplier\": \"0000301590\",\r\n  \"CompanyCode\": \"1000\",\r\n  \"WithholdingTaxType\": \"2C\",\r\n  \"ExemptionDateBegin\": \"/Date(0000000000000)/\",\r\n  \"ExemptionDateEnd\": \"/Date(0000000000000)/\",\r\n  \"ExemptionReason\": \"\",\r\n  \"IsWithholdingTaxSubject\": true,\r\n  \"RecipientType\": \"CO\",\r\n  \"WithholdingTaxCertificate\": \"1\",\r\n  \"WithholdingTaxCode\": \"C5\",\r\n  \"WithholdingTaxExmptPercent\": \"0\",\r\n  \"WithholdingTaxNumber\": \"\",\r\n  \"AuthorizationGroup\": \"\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://my419475-api.s4hana.cloud.sap/sap/opu/odata/sap/API_BUSINESS_PARTNER/A_SupplierWithHoldingTax",
+					"protocol": "https",
+					"host": [
+						"my419475-api",
+						"s4hana",
+						"cloud",
+						"sap"
+					],
+					"path": [
+						"sap",
+						"opu",
+						"odata",
+						"sap",
+						"API_BUSINESS_PARTNER",
+						"A_SupplierWithHoldingTax"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PO Attachments",
+			"id": "19845821-71b5ac1d-7d5a-41d8-b6c5-4d26bcb78670",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Salesorder",
+			"id": "19845821-f7ea11ed-9b3b-457b-9617-9ff0373d2bcd",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "fupi8xlLsuRZRmYwBKtUqaorELcnYa<EvKncVidV",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "CPI_COM",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://my419475-api.s4hana.cloud.sap/sap/opu/odata4/sap/api_salesorder/srvd_a2x/sap/salesorder/0001/SalesOrder('2101000113')",
+					"protocol": "https",
+					"host": [
+						"my419475-api",
+						"s4hana",
+						"cloud",
+						"sap"
+					],
+					"path": [
+						"sap",
+						"opu",
+						"odata4",
+						"sap",
+						"api_salesorder",
+						"srvd_a2x",
+						"sap",
+						"salesorder",
+						"0001",
+						"SalesOrder('2101000113')"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SalesorderPost",
+			"id": "19845821-cd665723-bc55-41fb-8efd-acaa1961c544",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "fupi8xlLsuRZRmYwBKtUqaorELcnYa<EvKncVidV",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "CPI_COM",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-csrf-token",
+						"value": "iDXnHMaok8xR4vtbH1zZ-A==",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n//    \"SalesOrder\": \" \",\r\n   \"SalesOrderType\": \"TA\",\r\n   \"SoldToParty\": \"0000102256\",\r\n   \"SalesOrganization\": \"1000\",\r\n   \"DistributionChannel\": \"10\",\r\n   \"OrganizationDivision\": \"00\",\r\n  // \"SalesGroup\": \"string\",\r\n  // \"SalesDistrict\": \"string\",\r\n   \"PurchaseOrderByCustomer\": \"Test123\",\r\n   //\"PurchaseOrderByShipToParty\": \"string\",\r\n  // \"CustomerPurchaseOrderType\": \"string\",\r\n//    \"CustomerPurchaseOrderDate\": \"2017-04-13\",\r\n//    \"CorrespncExternalReference\": \"string\",\r\n//    \"CorrespncExtRefByShipToParty\": \"string\",\r\n//    \"ReferenceSDDocument\": \"string\",\r\n//    \"SDDocumentReason\": \"string\",\r\n   \"SalesOrderDate\": \"2025-11-03\",\r\n   \"RequestedDeliveryDate\": \"2025-11-04\",\r\n    \"PricingDate\": \"2025-11-04\",\r\n//    \"ServicesRenderedDate\": \"2017-04-13\",\r\n    \"BillingDocumentDate\": \"2025-11-04\",\r\n   \"TransactionCurrency\": \"INR\",\r\n //  \"DeliveryDateTypeRule\": \"string\",\r\n//    \"ShippingCondition\": \"string\",\r\n//    \"CompleteDeliveryIsDefined\": true,\r\n//    \"SlsDocIsRlvtForProofOfDeliv\": true,\r\n//    \"ShippingType\": \"string\",\r\n//    \"ReceivingPoint\": \"string\",\r\n    \"IncotermsClassification\": \"FOB\",\r\n//    \"IncotermsVersion\": \"string\",\r\n//    \"IncotermsLocation1\": \"string\",\r\n//    \"IncotermsLocation2\": \"string\",\r\n//    \"CustomerPriceGroup\": \"string\",\r\n//    \"PriceListType\": \"string\",\r\n//    \"FixedValueDate\": \"2017-04-13\",\r\n//    \"TaxDepartureCountry\": \"string\",\r\n//    \"VATRegistrationCountry\": \"string\",\r\n//    \"IsEUTriangularDeal\": true,\r\n   \"CustomerPaymentTerms\": \"Z011\",\r\n//    \"PaymentMethod\": \"string\",\r\n//    \"CustomerAccountAssignmentGroup\": \"string\",\r\n//    \"AssignmentReference\": \"string\",\r\n//    \"AccountingDocExternalReference\": \"string\",\r\n//    \"HeaderBillingBlockReason\": \"string\",\r\n//    \"DeliveryBlockReason\": \"string\",\r\n//    \"SlsContrAutoAssgmtIDForSlsOrd\": \"string\",\r\n    \"CustomerGroup\": \"Z2\",\r\n//    \"AdditionalCustomerGroup1\": \"string\",\r\n//    \"AdditionalCustomerGroup2\": \"string\",\r\n//    \"AdditionalCustomerGroup3\": \"string\",\r\n//    \"AdditionalCustomerGroup4\": \"string\",\r\n//    \"AdditionalCustomerGroup5\": \"string\",\r\n   \"_Item\": [\r\n      {\r\n         //\"SalesOrderItem\": \"000010\",\r\n         // \"HigherLevelItem\": \"null\",\r\n         \"SalesOrderItemCategory\": \"TAN\",\r\n        \"SalesOrderItemText\": \"DOMS CUBOID DF PEN RED 20 PCS PACK\",\r\n         \"Product\": \"FAJ11AK0011\",\r\n         \"ProductGroup\": \"FAJ\",\r\n       //  \"MaterialByCustomer\": \"string\",\r\n        //  \"InternationalArticleNumber\": \"string\",\r\n         \"PurchaseOrderByCustomer\": \"Test123\",\r\n        //  \"UnderlyingPurchaseOrderItem\": \"string\",\r\n        //  \"CorrespncExternalReference\": \"string\",\r\n        //  \"PurchaseOrderByShipToParty\": \"string\",\r\n        //  \"UndrlgPurOrdItmByShipToParty\": \"string\",\r\n        //  \"CorrespncExtRefByShipToParty\": \"string\",\r\n          \"RequestedQuantity\": 12,\r\n          \"RequestedQuantitySAPUnit\": \"NOS\",\r\n          \"RequestedQuantityISOUnit\": \"_01\",\r\n        //  \"ReferenceSDDocument\": \"string\",\r\n        //  \"ReferenceSDDocumentItem\": \"string\",\r\n        \"ItemGrossWeight\": 100,\r\n         \"ItemNetWeight\": 100,\r\n         \"ItemWeightSAPUnit\": \"G\",\r\n         \"ItemWeightISOUnit\": \"GRM\",\r\n        // \"ItemVolume\": 0,\r\n        // \"ItemVolumeSAPUnit\": \"string\",\r\n        // \"ItemVolumeISOUnit\": \"string\",\r\n         \"RequestedDeliveryDate\": \"2025-11-04\",\r\n          \"PricingDate\": \"2025-11-04\",\r\n        //  \"ServicesRenderedDate\": \"2017-04-13\",\r\n        //  \"BillingDocumentDate\": \"2017-04-13\",\r\n        //  \"CustomerGroup\": \"string\",\r\n        //  \"Batch\": \"string\",\r\n         \"Plant\": \"8100\",\r\n         //\"StorageLocation\": \"1153\",\r\n        //  \"ShippingPoint\": \"string\",\r\n        //  \"ShippingType\": \"string\",\r\n        //  \"Route\": \"string\",\r\n        //  \"DeliveryPriority\": \"string\",\r\n        //  \"PartialDeliveryIsAllowed\": \"string\",\r\n        //  \"MaxNmbrOfPartialDelivery\": 0,\r\n        //  \"DeliveryDateTypeRule\": \"string\",\r\n        //  \"ReceivingPoint\": \"string\",\r\n        //  \"DeliveryGroup\": \"string\",\r\n         \"IncotermsClassification\": \"FOB\",\r\n        \"IncotermsLocation1\": \"Free on board\",\r\n        //  \"IncotermsLocation2\": \"string\",\r\n         \"CustomerPaymentTerms\": \"Z011\"\r\n        //  \"FixedValueDate\": \"2017-04-13\",\r\n        //  \"CustomerPriceGroup\": \"string\",\r\n        //  \"MaterialPricingGroup\": \"string\",\r\n        //  \"ProfitCenter\": \"\",\r\n        //  \"MatlAccountAssignmentGroup\": \"string\",\r\n        //  \"WBSElementExternalID\": \"string\",\r\n        //  \"ItemBillingBlockReason\": \"string\",\r\n        //  \"SalesDocumentRjcnReason\": \"string\",\r\n        //  \"SlsContrAutoAssgmtIDForSlsOrd\": \"string\"\r\n      }    \r\n   ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://my419475-api.s4hana.cloud.sap/sap/opu/odata4/sap/api_salesorder/srvd_a2x/sap/salesorder/0001/SalesOrder",
+					"protocol": "https",
+					"host": [
+						"my419475-api",
+						"s4hana",
+						"cloud",
+						"sap"
+					],
+					"path": [
+						"sap",
+						"opu",
+						"odata4",
+						"sap",
+						"api_salesorder",
+						"srvd_a2x",
+						"sap",
+						"salesorder",
+						"0001",
+						"SalesOrder"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Salesorderupdate",
+			"id": "19845821-c884d716-20f7-4a19-98ff-2a30839dfec1",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "fupi8xlLsuRZRmYwBKtUqaorELcnYa<EvKncVidV",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "CPI_COM",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "x-csrf-token",
+						"value": "iDXnHMaok8xR4vtbH1zZ-A==",
+						"type": "text"
+					},
+					{
+						"key": "If-Match",
+						"value": "W/\"SADL-202511031223377484470C~20251103122337.7484470\"",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    //    \"SalesOrder\": \" \",\r\n    //   \"SalesOrderType\": \"TA\",\r\n    //   \"SoldToParty\": \"0000102256\",\r\n    //   \"SalesOrganization\": \"1000\",\r\n    //  \"DistributionChannel\": \"10\",\r\n    //  \"OrganizationDivision\": \"00\",\r\n    // \"SalesGroup\": \"string\",\r\n    // \"SalesDistrict\": \"string\",\r\n    \"PurchaseOrderByCustomer\": \"Test123\",\r\n    //\"PurchaseOrderByShipToParty\": \"string\",\r\n    // \"CustomerPurchaseOrderType\": \"string\",\r\n    //    \"CustomerPurchaseOrderDate\": \"2017-04-13\",\r\n    //    \"CorrespncExternalReference\": \"string\",\r\n    //    \"CorrespncExtRefByShipToParty\": \"string\",\r\n    //    \"ReferenceSDDocument\": \"string\",\r\n    //    \"SDDocumentReason\": \"string\",\r\n    // \"SalesOrderDate\": \"2025-11-03\",\r\n    // \"RequestedDeliveryDate\": \"2025-11-04\",\r\n    // \"PricingDate\": \"2025-11-04\",\r\n    //    \"ServicesRenderedDate\": \"2017-04-13\",\r\n    // \"BillingDocumentDate\": \"2025-11-04\",\r\n    \"TransactionCurrency\": \"USD\",\r\n    //  \"DeliveryDateTypeRule\": \"string\",\r\n    //    \"ShippingCondition\": \"string\",\r\n    //    \"CompleteDeliveryIsDefined\": true,\r\n    //    \"SlsDocIsRlvtForProofOfDeliv\": true,\r\n    //    \"ShippingType\": \"string\",\r\n    //    \"ReceivingPoint\": \"string\",\r\n    // \"IncotermsClassification\": \"FOB\",\r\n    //    \"IncotermsVersion\": \"string\",\r\n    //    \"IncotermsLocation1\": \"string\",\r\n    //    \"IncotermsLocation2\": \"string\",\r\n    //    \"CustomerPriceGroup\": \"string\",\r\n    //    \"PriceListType\": \"string\",\r\n    //    \"FixedValueDate\": \"2017-04-13\",\r\n    //    \"TaxDepartureCountry\": \"string\",\r\n    //    \"VATRegistrationCountry\": \"string\",\r\n    //    \"IsEUTriangularDeal\": true,\r\n    // \"CustomerPaymentTerms\": \"Z011\",\r\n    //    \"PaymentMethod\": \"string\",\r\n    //    \"CustomerAccountAssignmentGroup\": \"string\",\r\n        \"AssignmentReference\": \"string\"\r\n    //    \"AccountingDocExternalReference\": \"string\",\r\n    //    \"HeaderBillingBlockReason\": \"string\",\r\n    //    \"DeliveryBlockReason\": \"string\",\r\n    //    \"SlsContrAutoAssgmtIDForSlsOrd\": \"string\",\r\n    // \"CustomerGroup\": \"Z2\",\r\n    //    \"AdditionalCustomerGroup1\": \"string\",\r\n    //    \"AdditionalCustomerGroup2\": \"string\",\r\n    //    \"AdditionalCustomerGroup3\": \"string\",\r\n    //    \"AdditionalCustomerGroup4\": \"string\",\r\n    //    \"AdditionalCustomerGroup5\": \"string\",\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://my419475-api.s4hana.cloud.sap/sap/opu/odata4/sap/api_salesorder/srvd_a2x/sap/salesorder/0001/SalesOrder('2101000122')",
+					"protocol": "https",
+					"host": [
+						"my419475-api",
+						"s4hana",
+						"cloud",
+						"sap"
+					],
+					"path": [
+						"sap",
+						"opu",
+						"odata4",
+						"sap",
+						"api_salesorder",
+						"srvd_a2x",
+						"sap",
+						"salesorder",
+						"0001",
+						"SalesOrder('2101000122')"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "BusinessPartnerGet",
+			"id": "19845821-18bfd8b6-ad31-467e-b5f7-509aab751b99",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "fupi8xlLsuRZRmYwBKtUqaorELcnYa<EvKncVidV",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "CPI_COM",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://my419475-api.s4hana.cloud.sap/sap/opu/odata/sap/API_BUSINESS_PARTNER/A_BusinessPartner('9980000000')",
+					"protocol": "https",
+					"host": [
+						"my419475-api",
+						"s4hana",
+						"cloud",
+						"sap"
+					],
+					"path": [
+						"sap",
+						"opu",
+						"odata",
+						"sap",
+						"API_BUSINESS_PARTNER",
+						"A_BusinessPartner('9980000000')"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "BusinessPartnerPost",
+			"id": "19845821-6d39a0ba-6eff-4e31-837a-4db17976c2ff",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "fupi8xlLsuRZRmYwBKtUqaorELcnYa<EvKncVidV",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "CPI_COM",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-csrf-token",
+						"value": "9PcIAWRSPMW79teQZ4v_IA==",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n   \"BusinessPartner\": \"\",\r\n //  \"AcademicTitle\": \"developer\",\r\n  // \"AuthorizationGroup\": \"string\",\r\n   \"BusinessPartnerCategory\": \"1\",\r\n   \"BusinessPartnerGrouping\": \"BPEE\",\r\n   \"CorrespondenceLanguage\": \"EN\",\r\n   \"FirstName\": \"Manish\",\r\n  // \"FormOfAddress\": \"string\",\r\n   \"Industry\": \"NDBS\",\r\n //  \"InternationalLocationNumber1\": \"string\",\r\n //  \"InternationalLocationNumber2\": \"string\",\r\n   \"IsFemale\": false,\r\n   \"IsMale\": true,\r\n  // \"IsNaturalPerson\": \"Yes\",\r\n   \"IsSexUnknown\": false,\r\n  // \"GenderCodeName\": \"string\",\r\n //  \"Language\": \"string\",\r\n   \"LastName\": \"Kumar\",\r\n  // \"LegalForm\": \"string\",\r\n   \"OrganizationBPName1\": \"NDBS\",\r\n   \"OrganizationBPName2\": \"Adilabad\",\r\n//    \"OrganizationBPName3\": \"string\",\r\n//    \"OrganizationBPName4\": \"string\",\r\n//    \"OrganizationFoundationDate\": \"/Date(1492041600000)/\",\r\n//    \"OrganizationLiquidationDate\": \"/Date(1492041600000)/\",\r\n//    \"SearchTerm1\": \"string\",\r\n//    \"SearchTerm2\": \"string\",\r\n//    \"AdditionalLastName\": \"string\",\r\n//    \"BirthDate\": \"/Date(1492041600000)/\",\r\n//    \"BusinessPartnerBirthDateStatus\": \"string\",\r\n//    \"BusinessPartnerBirthplaceName\": \"string\",\r\n//    \"BusinessPartnerDeathDate\": \"/Date(1492041600000)/\",\r\n//    \"BusinessPartnerIsBlocked\": false,\r\n//   \"BusinessPartnerType\": \"string\",\r\n//    \"GroupBusinessPartnerName1\": \"string\",\r\n//    \"GroupBusinessPartnerName2\": \"string\",\r\n//    \"InternationalLocationNumber3\": \"string\",\r\n   \"MiddleName\": \"M\",\r\n  // \"NameCountry\": \"India\",\r\n//    \"NameFormat\": \"string\",\r\n   \"PersonFullName\": \"Manish.M.Kumar\",\r\n//    \"IsMarkedForArchiving\": true,\r\n//    \"BusinessPartnerIDByExtSystem\": \"string\",\r\n//    \"BusinessPartnerPrintFormat\": \"string\",\r\n//    \"BusinessPartnerOccupation\": \"string\",\r\n//    \"BusPartMaritalStatus\": \"string\",\r\n//    \"BusPartNationality\": \"string\",\r\n//    \"BusinessPartnerBirthName\": \"string\",\r\n//    \"BusinessPartnerSupplementName\": \"string\",\r\n//    \"NaturalPersonEmployerName\": \"string\",\r\n//    \"LastNamePrefix\": \"string\",\r\n//    \"LastNameSecondPrefix\": \"string\",\r\n//    \"Initials\": \"string\",\r\n//    \"BPDataControllerIsNotRequired\": true,\r\n//    \"TradingPartner\": \"string\",\r\n   \"to_AddressIndependentEmail\":  {\r\n      \"results\": [ \r\n         {\r\n            // \"BusinessPartner\": \"string\",\r\n            \"AddressID\": \"09876\",\r\n           // \"Person\": \"string\",\r\n           // \"OrdinalNumber\": \"string\",\r\n            \"EmailAddress\": \"test@gmail.com\",\r\n            \"IsDefaultEmailAddress\": true,\r\n            \"ValidityStartDate\": \"/Date(2025110100000)/\",\r\n            \"ValidityEndDate\": \"/Date(2025110100000)/\"\r\n         }\r\n      ]\r\n   }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://my419475-api.s4hana.cloud.sap/sap/opu/odata/sap/API_BUSINESS_PARTNER/A_BusinessPartner",
+					"protocol": "https",
+					"host": [
+						"my419475-api",
+						"s4hana",
+						"cloud",
+						"sap"
+					],
+					"path": [
+						"sap",
+						"opu",
+						"odata",
+						"sap",
+						"API_BUSINESS_PARTNER",
+						"A_BusinessPartner"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "BusinessPartnerupdate",
+			"id": "19845821-6fb2ba20-4783-4b5f-a0e1-6fdf407ded61",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "fupi8xlLsuRZRmYwBKtUqaorELcnYa<EvKncVidV",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "CPI_COM",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "x-csrf-token",
+						"value": "9PcIAWRSPMW79teQZ4v_IA==",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \r\n  // \"BusinessPartner\": \"9980000200\",\r\n //  \"AcademicTitle\": \"developer\",\r\n  // \"AuthorizationGroup\": \"string\",\r\n  // \"BusinessPartnerCategory\": \"1\",\r\n  // \"BusinessPartnerGrouping\": \"BPEE\",\r\n  // \"CorrespondenceLanguage\": \"EN\",\r\n //  \"FirstName\": \"Manish\",\r\n  // \"FormOfAddress\": \"string\",\r\n//   \"Industry\": \"NDBS\",\r\n //  \"InternationalLocationNumber1\": \"string\",\r\n //  \"InternationalLocationNumber2\": \"string\",\r\n //  \"IsFemale\": false,\r\n//   \"IsMale\": true,\r\n  // \"IsNaturalPerson\": \"Yes\",\r\n //  \"IsSexUnknown\": false,\r\n  // \"GenderCodeName\": \"string\",\r\n //  \"Language\": \"string\",\r\n  \"LastName\": \"Mani\",\r\n  // \"LegalForm\": \"string\",\r\n  \"OrganizationBPName1\": \"NDBS\",\r\n   \"OrganizationBPName2\": \"Adilabad\",\r\n    \"OrganizationBPName3\": \"string\",\r\n//    \"OrganizationBPName4\": \"string\",\r\n//    \"OrganizationFoundationDate\": \"/Date(1492041600000)/\",\r\n//    \"OrganizationLiquidationDate\": \"/Date(1492041600000)/\",\r\n//    \"SearchTerm1\": \"string\",\r\n//    \"SearchTerm2\": \"string\",\r\n//    \"AdditionalLastName\": \"string\",\r\n//    \"BirthDate\": \"/Date(1492041600000)/\",\r\n//    \"BusinessPartnerBirthDateStatus\": \"string\",\r\n    \"BusinessPartnerBirthplaceName\": \"Bowenpally\",\r\n//    \"BusinessPartnerDeathDate\": \"/Date(1492041600000)/\",\r\n//    \"BusinessPartnerIsBlocked\": false,\r\n//   \"BusinessPartnerType\": \"string\",\r\n//    \"GroupBusinessPartnerName1\": \"string\",\r\n//    \"GroupBusinessPartnerName2\": \"string\",\r\n//    \"InternationalLocationNumber3\": \"string\",\r\n//   \"MiddleName\": \"M\",\r\n  // \"NameCountry\": \"India\",\r\n//    \"NameFormat\": \"string\",\r\n //  \"PersonFullName\": \"Manish.M.Kumar\",\r\n//    \"IsMarkedForArchiving\": true,\r\n//    \"BusinessPartnerIDByExtSystem\": \"string\",\r\n//    \"BusinessPartnerPrintFormat\": \"string\",\r\n//    \"BusinessPartnerOccupation\": \"string\",\r\n//    \"BusPartMaritalStatus\": \"string\",\r\n//    \"BusPartNationality\": \"string\",\r\n    \"BusinessPartnerBirthName\": \"HYDERABAD\"\r\n//    \"BusinessPartnerSupplementName\": \"string\",\r\n//    \"NaturalPersonEmployerName\": \"string\",\r\n//    \"LastNamePrefix\": \"string\",\r\n//    \"LastNameSecondPrefix\": \"string\",\r\n//    \"Initials\": \"string\",\r\n//    \"BPDataControllerIsNotRequired\": true,\r\n//    \"TradingPartner\": \"string\",\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://my419475-api.s4hana.cloud.sap/sap/opu/odata/sap/API_BUSINESS_PARTNER/A_BusinessPartner('9980000200')",
+					"protocol": "https",
+					"host": [
+						"my419475-api",
+						"s4hana",
+						"cloud",
+						"sap"
+					],
+					"path": [
+						"sap",
+						"opu",
+						"odata",
+						"sap",
+						"API_BUSINESS_PARTNER",
+						"A_BusinessPartner('9980000200')"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
